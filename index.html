@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  
+  <meta property="og:image" content="http://energyapp.co/img/logo.jpg" />
+  <meta property="og:title" content="EnergyExpress" />
+  <meta property="og:description" content="EnergyExpress: Number One Coal News App" />
+
+  <meta name="twitter:image:src" content="http://energyapp.co/img/logo.jpg"/>
+
+
+  <meta name="keywords" content="News, coal, coal trading, energy, energy sector, mining, shipping, freight, app, android, apple, analytics, updates, insights, rumors, coal price, freight rates, coal report, coal digest, RB1, RB2, RB3, API4, API2, anthracite">
+
+  <meta name="description" content="EnergyExpress: Number One Coal News App">
+  <title>EnergyExpress</title>
+  <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+  <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/hover-min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/component.css"/>
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <style>
+    #page-preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #eee;
+      z-index: 100500;
+  }
+
+  #page-preloader .spinner {
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: url('img/spinner.gif') no-repeat 50% 50%;
+      margin: -37px 0 0 -37px;
+  }
+  </style>
+
+</head>
+<body>
+  <div class="for-overflow">
+  <div id="page-preloader"><span class="spinner"></span></div>
+
+  <!-- <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script> -->
+
+    <div class="header">
+      <div class="shadow"></div><!-- shadow -->
+      <div class="container" style="height: 100%">
+
+        <!-- <div id="social-modal" class="alert alert-success hidden-sm hidden-xs">
+          <div class="social-modal-win">
+            <span class="close">&times;</span>
+            <div class="social-modal-names">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 text-center">
+                    <div class="social-modal-in">
+                      in
+                    </div>
+                    <div class="social-modal-in-descr">
+                      LinkedIn
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 text-center">
+                    <div class="social-modal-tw">
+                      t
+                    </div>
+                    <div class="social-modal-tw-descr">
+                      twitter
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="social-modal-widgets">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 text-center">
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                    <script type="IN/CompanyProfile" data-id="6382324" data-format="inline"></script>
+                  </div>
+                  <div class="col-lg-4 col-md-6 text-center">
+                    <a class="twitter-timeline" href="https://twitter.com/enexpress_app" data-widget-id="702756445696163840">Tweets by @enexpress_app</a>
+              			<script>
+              				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+              			</script>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+            <div class="social-modal-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-1 col-md-3">
+                    <img src="img/logo.jpg" alt="logo">
+                  </div>
+                  <div class="col-lg-7 col-md-9 text-center">
+                    <h1><span>#1</span> COAL NEWS APP</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="row" style="height: 100%">
+          <div class="col-xs-12">
+            <div class="header-description">
+              <div class="header-descr-title">
+                ENERGY EXPRESS
+              </div><!-- header-descr-title -->
+              <div class="header-descr-subtitle">
+                LATEST NEWS OF COAL TRADING, <br class="visible-xs">OIL,<br class="hidden-xs">NATURAL GAS AND RENEWABLE <br class="visible-xs">ENERGY
+              </div><!-- header-descr-subtitle -->
+              <div class="header-descr-text">
+                Access analytics, news, updates, insights and everything related to<br class="hidden-xs"> the energy sector in a single package
+              </div><!-- header-descr-text -->
+            </div><!-- header-description -->
+          </div><!-- col-xs-12 -->
+          <div class="clearfix"></div>
+          <div class="col-sm-offset-3 col-sm-9">
+            <h1><span>ENERGY</span> NEWS HUB</h1>
+            <div class="header-flex">
+              <div class="item">
+                <img src="img/header/icon-1.png" alt="icon">
+                <p>Oil &amp; Gas</p>
+              </div>
+              <div class="item">
+                <img src="img/header/icon-2.png" alt="icon">
+                <p>Coal</p>
+              </div>
+              <div class="item">
+                <img src="img/header/icon-3.png" alt="icon">
+                <p>Renewable energy</p>
+              </div>
+            </div>
+          </div><!-- col-sm-9 -->
+          <div class="logo-header">
+            <img src="img/logo.jpg" alt="logo">
+          </div><!-- logo-header -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </div><!-- header -->
+
+  <div id="MobileVer" class="visible-xs-block">
+    <div class="section firstPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box rowHead firstRowHead">
+              <div class="social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+            </div>
+          </div><!-- col-sm-12 -->
+        </div><!-- row -->
+        <div class="clearfix"></div>
+        <div class="row img-plus-content">
+          <div class="leftblock col-md-7 device">
+            <img src="http://energyapp.co/img/mob-tab.png" alt="mob-tablet">
+          </div><!-- leftblock -->
+          <div class="animated rightblock hidded col-md-5 text">
+            <div class="title">
+              <p>
+                <span class="title-black text-uppercase">PROFESSIONAL ENERGY NEWS APP</span>
+              </p>
+            </div>
+            <div class="content">
+              <p class="paragraph">
+                EnergyExpress brings you the latest news of coal trading, oil, natural gas and renewable energy. With EE you are getting access to the well organized news feeds and regularly updated exclusive content.
+              </p>
+            </div>
+          </div><!-- rightblock -->
+          <div class="clearfix"></div><!-- clearfix -->
+          <div class="col-sm-12 buttons">
+            <a href="https://itunes.apple.com/us/app/energyexpress/id959849668?mt=8" class="hvr-float-shadow" rel="external">
+              <img src="img/appStore.png" alt="appStore">
+            </a>
+            <!-- <a href="https://play.google.com/store/apps/details?id=co.energyapp.energyexpressblog" class="hvr-float-shadow" rel="external">
+              <img src="img/googlePlay.png" alt="googlePlay">
+            </a>
+            <br>
+            <a href="http://www.amazon.com/Smart-Carbon-Coal-News-EnergyExpress/dp/B01C436S4W/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1456235456&sr=1-1&keywords=energyexpress" class="hvr-float-shadow" rel="external">
+              <img src="img/blackBerry.png" alt="blackBerry">
+            </a> -->
+          </div><!-- col-sm-12 -->
+        </div><!-- row img-plus-content -->
+      </div><!-- container -->
+    </div><!-- section firstPage -->
+  </div>
+
+  <div id="fullpage" class="hidden-xs">
+    <div class="section firstPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box rowHead firstRowHead">
+              <div class="hidden-sm social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+              <div class="visible-sm-block social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+            </div>
+          </div><!-- col-sm-12 -->
+        </div><!-- row -->
+        <div class="clearfix"></div>
+        <div class="row img-plus-content">
+          <div class="animated leftblock hidded col-md-7 device">
+            <img src="http://energyapp.co/img/mob-tab.png" alt="mob-tablet">
+          </div><!-- leftblock -->
+          <div class="animated rightblock hidded col-md-5 text">
+            <div class="title">
+              <p>
+                <span class="title-black text-uppercase">PROFESSIONAL ENERGY NEWS APP</span>
+              </p>
+            </div>
+            <div class="content">
+              <p class="paragraph">
+                EnergyExpress brings you the latest news of coal trading, oil, natural gas and renewable energy. With EE you are getting access to the well organized news feeds and regularly updated exclusive content.
+              </p>
+              <div class="buttons hidded animated">
+                <a href="https://itunes.apple.com/us/app/energyexpress/id959849668?mt=8" class="hvr-float-shadow" rel="external">
+                  <img src="img/appStore.png" alt="appStore">
+                </a>
+              </div>
+            </div>
+          </div><!-- rightblock -->
+          <div class="clearfix"></div><!-- clearfix -->
+          <div class="col-sm-12 buttons hidded animated">
+            <a href="https://itunes.apple.com/us/app/energyexpress/id959849668?mt=8" class="hvr-float-shadow" rel="external">
+              <img src="img/appStore.png" alt="appStore">
+            </a>
+            <!-- <a href="https://play.google.com/store/apps/details?id=co.energyapp.energyexpressblog" class="hvr-float-shadow" rel="external">
+              <img src="img/googlePlay.png" alt="googlePlay">
+            </a>
+            <a href="http://www.amazon.com/Smart-Carbon-Coal-News-EnergyExpress/dp/B01C436S4W/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1456235456&sr=1-1&keywords=energyexpress" class="hvr-float-shadow" rel="external">
+              <img src="img/blackBerry.png" alt="blackBerry">
+            </a> -->
+          </div><!-- col-sm-12 -->
+        </div><!-- row img-plus-content -->
+      </div><!-- container -->
+    </div><!-- section firstPage -->
+  </div><!-- fullpage -->
+    
+    <div class="section secondPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box rowHead firstRowHead">
+              <div class="hidden-sm social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/samsung.png">
+                  <span data-hover="f">f</span>
+                </a>
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/samsung.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/samsung.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+              <div class="visible-sm-block social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/samsung.png">
+                  <span data-hover="f">f</span>
+                </a>
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/samsung.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/samsung.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+            </div>
+          </div><!-- col-sm-12 -->
+        </div><!-- row -->
+        <div class="clearfix"></div>
+        <div class="row img-plus-content">
+          
+          <div class="animated rightblock hidded col-md-5 col-md-push-7 device text-center">
+            <img src="http://energyapp.co/img/samsung.png" alt="samsung">
+          </div><!-- rightblock -->
+
+          <div class="animated leftblock hidded col-md-7 col-md-pull-5 text">
+            <div class="title">
+              <p>
+                <span class="title-black text-uppercase">With EnergyExpress you are the first to know the latest news</span>
+              </p>
+            </div>
+            <div class="content">
+              <p class="paragraph">
+                We cooperate with industry leaders who share and publish their exclusive material in EnergyExpress app. Follow us to be the first to know the latest news.
+              </p>
+              <p class="paragraph">
+                EnergyExpress consolidates the key news items from the international coal market granting the <span>ACCESS TO THE MOST RECENT NEWS OF COAL TRADING, MINING, ENERGY SECTOR, FREIGHT AND CHARTERING.</span>
+              </p>
+            </div>
+            <div class="clearfix"></div><!-- clearfix -->
+            <div class="buttons">
+              <a href="https://itunes.apple.com/us/app/energyexpress/id959849668?mt=8" class="hvr-float-shadow" rel="external">
+                <img src="img/appStore.png" alt="appStore">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=co.energyapp.energyexpressblog" class="hvr-float-shadow" rel="external">
+                <img src="img/googlePlay.png" alt="googlePlay">
+              </a>
+              <br class="visible-xs">
+              <a href="http://www.amazon.com/Smart-Carbon-Coal-News-EnergyExpress/dp/B01C436S4W/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1456235456&sr=1-1&keywords=energyexpress" class="hvr-float-shadow" rel="external">
+                <img src="img/blackBerry.png" alt="blackBerry">
+              </a>
+            </div><!-- buttons -->
+          </div><!-- leftblock -->
+        </div><!-- row img-plus-content -->
+      </div><!-- container -->
+    </div><!-- section secondPage -->
+
+    <div class="section thirdPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box rowHead firstRowHead">
+              <div class="hidden-sm social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/blackberry-device.jpg">
+                  <span data-hover="f">f</span>
+                </a>
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/blackberry-device.jpg">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/blackberry-device.jpg">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+              <div class="visible-sm-block social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/blackberry-device.jpg">
+                  <span data-hover="f">f</span>
+                </a>
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/blackberry-device.jpg">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/blackberry-device.jpg">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+            </div>
+          </div><!-- col-sm-12 -->
+        </div><!-- row -->
+        <div class="clearfix"></div>
+        <div class="row img-plus-content">
+          <div class="animated leftblock hidded col-md-5 device text-center">
+            <img src="http://energyapp.co/img/blackberry-device.jpg" alt="blackberry-device">
+          </div><!-- leftblock -->
+          <div class="animated rightblock hidded col-md-7 text">
+            <div class="title">
+              <p>
+                <span class="title-black text-uppercase">Join coal industry leaders who use energyexpress app</span>
+              </p>
+            </div>
+            <div class="content">
+              <p class="paragraph">Catch up with informative stories with primary focus on coal traders and industry professionals. Download EnergyExpress app and we'll give you the most <span>important and recent news from around the coal industry.</span></p>
+            </div><!-- content -->
+            <div class="clearfix"></div><!-- clearfix -->
+            <div class="buttons">
+              <a href="https://itunes.apple.com/us/app/energyexpress/id959849668?mt=8" class="hvr-float-shadow" rel="external">
+                <img src="img/appStore.png" alt="appStore">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=co.energyapp.energyexpressblog" class="hvr-float-shadow" rel="external">
+                <img src="img/googlePlay.png" alt="googlePlay">
+              </a>
+              <br class="visible-xs">
+              <a href="http://www.amazon.com/Smart-Carbon-Coal-News-EnergyExpress/dp/B01C436S4W/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1456235456&sr=1-1&keywords=energyexpress" class="hvr-float-shadow" rel="external">
+                <img src="img/blackBerry.png" alt="blackBerry">
+              </a>
+            </div><!-- buttons -->
+          </div><!-- rightblock -->
+        </div><!-- row img-plus-content -->
+      </div><!-- container -->
+    </div><!-- section thirdPage -->
+
+    <div class="yellow-truck-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 visible-xs">
+            <div class="hidden-sm social text-right cl-effect-2">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+          </div><!-- col-xs-12 -->
+          <div class="col-sm-3 col-xs-4 for-paddings">
+            <img src="img/yellow-truck-block/logo-black.png" alt="logo-black" class="hidded animated yellow-truck-block-logo-black">
+          </div><!-- col-sm-3 col-xs-4 -->
+          <div class="col-md-7 col-sm-6 for-paddings">
+            <div class="yellow-truck-block-title hidded animated">
+              <span class="red-number">#1</span>coal news app <br><span class="thin">pushed even further</span>
+            </div><!-- yellow-truck-block-title -->
+          </div><!-- col-md-7 col-sm-6 -->
+          <div class="col-md-2 col-sm-3 col-xs-7 for-paddings hidden-xs">
+            <div class="hidden-sm social text-right cl-effect-2">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+              <div class="visible-sm-block social text-right cl-effect-2">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+          </div><!-- col-md-2 col-sm-3 col-xs-7 -->
+          <div class="clearfix"></div><!-- clearfix -->
+          <div class="col-md-8 col-sm-7  for-paddings">
+            <div class="yellow-truck-block-item hidded animated yellow-truck-block-item-red">
+              analytics, news, updates, insights, rates, <br>and prices in continous feed
+            </div><!-- yellow-truck-block-item -->
+            <div class="clearfix"></div>
+            <div class="yellow-truck-block-item hidded animated">
+              SHARE the most important news with your <br>colleagues and partners
+            </div><!-- yellow-truck-block-item -->
+            <div class="clearfix"></div>
+            <div class="yellow-truck-block-item hidded animated">
+              breaking news and events are streamed <br>to tickers and push notifications
+            </div><!-- yellow-truck-block-item -->
+            <div class="clearfix"></div>
+            <div class="yellow-truck-block-item hidded animated">
+              major coal prices and indices from key <br>ports and on main destinations
+            </div><!-- yellow-truck-block-item -->
+            <div class="clearfix"></div>
+            <div class="yellow-truck-block-item hidded animated yellow-truck-block-item-black">
+              bookmark important entries for future <br>work and reference
+            </div><!-- yellow-truck-block-item -->
+          </div><!-- col-md-8 col-sm-7 -->
+          <div class="col-md-4 col-sm-5 for-paddings">
+            <img src="img/yellow-truck-block/iphone.png" alt="iphone" class="new-iphone hidded animated">
+          </div><!-- col-md-4 col-sm-5 -->
+          <div class="clearfix"></div><!-- clearfix -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- yellow-truck-block -->
+
+  <div class="bottom-part">
+    <div class="grey-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center text-uppercase grey-block-title">
+            DOWNLOAD YOUR ENERGYEXPRESS
+          </div><!-- col-xs-12 -->
+          <div class="clearfix"></div><!-- clearfix -->
+          <div class="col-xs-4 text-center">
+            <a target="_blank" href="https://itunes.apple.com/us/app/energyexpress/id959849668?mt=8" class="line-for-logotypes apple hidded animated"></a><!-- line-for-logotypes -->
+          </div><!-- col-sm-4 -->
+          <div class="col-xs-4 text-center">
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=co.energyapp.energyexpressblog" class="line-for-logotypes android hidded animated"></a><!-- line-for-logotypes -->
+          </div><!-- col-sm-4 -->
+          <div class="col-xs-4 text-center">
+            <a target="_blank" href="http://www.amazon.com/Smart-Carbon-Coal-News-EnergyExpress/dp/B01C436S4W/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1456235456&sr=1-1&keywords=energyexpress" class="line-for-logotypes bb hidded animated"></a><!-- line-for-logotypes -->
+          </div><!-- col-sm-4 -->
+          <div class="clearfix"></div><!-- clearfix -->
+          <div class="col-sm-12">
+            <div class="box rowHead firstRowHead">
+              <div class="hidden-sm social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+              <div class="visible-sm-block social text-right cl-effect-2 right">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+            </div>
+          </div><!-- col-sm-12 -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- grey-block -->
+    <div class="red-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-5 col-sm-9">
+            <div class="red-block-title">
+              ADVERTISE <br class="visible-xs">WITH US
+            </div><!-- red-block-title -->
+          </div><!-- col-md-offset-1 col-md-5 col-sm-9 -->
+          <div class="clearfix"></div><!-- clearfix -->
+          <div class="col-md-offset-1 col-lg-9 col-md-10 col-sm-10 red-block-content">
+            <span>ENERGYEXPRESS</span> gives you unrivalled access to precisely targeted audience groups. Contact our advertising sales department to book advertisement within <span>ENERGYEXPRESS APP.</span>
+          </div><!-- col-md-offset-1 col-lg-9 col-md-10 col-sm-10 -->
+          <div class="clearfix"></div><!-- clearfix -->
+          <div class="col-md-offset-1 col-md-11 red-block-mail">
+            <a href="mailto:pr@smartcarbon.technology">pr@smartcarbon.tech</a>
+          </div><!-- red-block-mail -->
+        </div><!-- row -->
+      </div><!-- container -->
+      <div class="red-block-separator"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box rowHead firstRowHead">
+              <div class="hidden-sm social text-right cl-effect-2">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+              <div class="visible-sm-block social text-right cl-effect-2">
+                <div class="share">
+                  Follow us
+                </div>
+                <!-- <a class="f social_share" data-type="fb" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="f">f</span>
+                </a> -->
+                <a class="t social_share" data-type="tw" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="t">t</span>
+                </a>
+                <a class="in social_share" data-type="vk" data-image="http://energyapp.co/img/mob-tab.png">
+                  <span data-hover="in">in</span>
+                </a>
+              </div>
+              <div class="copyrights">
+                © All rights reserved. Smart Carbon Technology 2016
+              </div><!-- copyrights -->
+            </div>
+          </div><!-- col-sm-12 -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- red-block -->
+  </div><!-- bottom-part -->
+  </div><!-- for-overflow -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      var $preloader = $('#page-preloader'),
+          $spinner   = $preloader.find('.spinner');
+      $spinner.fadeOut();
+      $preloader.fadeOut('slow', function() {
+        setTimeout(function() {
+          $('.shadow').addClass('active');
+        }, 0)
+      });
+    });
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/share.js"></script>
+  <script type="text/javascript" src="js/jquery.waypoints.js"></script>
+  <script>
+    $(document).on('click', '.social_share', function(){
+      Share.go(this);
+    });
+  </script>
+  <script type="text/javascript">
+  /* <![CDATA[ */
+   function externalLinks() {
+    links = document.getElementsByTagName("a");
+    for (i=0; i<links.length; i++) {
+      link = links[i];
+      if (link.getAttribute("href") && link.getAttribute("rel") == "external")
+      link.target = "_blank";
+    }
+   }
+   window.onload = externalLinks;
+  /* ]]> */ 
+  </script>
+
+  <script>
+    $(function(){
+      $(".close").click(function(){
+        $("#social-modal").alert('close');
+      });
+    });
+  </script>
+  
+  <script>
+      $('.firstPage .leftblock')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+          else 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+          else 
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+        }, {
+            offset: '-25%'
+        });
+  </script>
+
+  <script>
+      $('.firstPage .rightblock')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+          else 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+          else 
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+        }, {
+            offset: '-25%'
+        });
+  </script>
+
+  <script>
+      $('.firstPage .buttons')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutDown') //8
+              .addClass('fadeInUp'); //1
+          else 
+            $(this)
+              .removeClass('fadeInDown') //6
+              .addClass('fadeOutDown'); //7
+        }, {
+            offset:'93%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInUp') //2
+              .addClass('fadeOutUp'); //3
+          else 
+            $(this)
+              .removeClass('fadeOutUp') //4
+              .addClass('fadeInDown'); //5
+        }, {
+            offset: '7%'
+        });
+  </script>
+
+  <script>
+      $('.yellow-truck-block-logo-black')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutDown') //8
+              .addClass('fadeInUp'); //1
+          else 
+            $(this)
+              .removeClass('fadeInDown') //6
+              .addClass('fadeOutDown'); //7
+        }, {
+            offset:'93%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInUp') //2
+              .addClass('fadeOutUp'); //3
+          else 
+            $(this)
+              .removeClass('fadeOutUp') //4
+              .addClass('fadeInDown'); //5
+        }, {
+            offset: '-5%'
+        });
+  </script>
+
+  <script>
+      $('.yellow-truck-block-title')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutDown') //8
+              .addClass('fadeInUp'); //1
+          else 
+            $(this)
+              .removeClass('fadeInDown') //6
+              .addClass('fadeOutDown'); //7
+        }, {
+            offset:'93%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInUp') //2
+              .addClass('fadeOutUp'); //3
+          else 
+            $(this)
+              .removeClass('fadeOutUp') //4
+              .addClass('fadeInDown'); //5
+        }, {
+            offset: '0%'
+        });
+  </script>
+  
+    <script>
+      $('.secondPage .leftblock')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+          else 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+          else 
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+        }, {
+            offset:'-50%'
+        });
+  </script>
+
+  <script>
+      $('.secondPage .rightblock')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+          else 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+          else 
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+        }, {
+            offset: '-50%'
+        });
+  </script>
+
+  <script>
+      $('.thirdPage .leftblock')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+          else 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+          else 
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+        }, {
+            offset:'-35%'
+        });
+  </script>
+
+  <script>
+      $('.thirdPage .rightblock')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+          else 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+          else 
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+        }, {
+            offset: '-35%'
+        });
+  </script>
+
+  <script>
+      $('.apple')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+          else 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+          else 
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+        }, {
+            offset: '-10%'
+        });
+  </script>
+
+  <script>
+      $('.yellow-truck-block-item')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+          else 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInLeft')
+              .addClass('fadeOutLeft');
+          else 
+            $(this)
+              .removeClass('fadeOutLeft')
+              .addClass('fadeInLeft');
+        }, {
+            offset: '-10%'
+        });
+  </script>
+
+  <script>
+      $('.android')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutDown')
+              .addClass('fadeInUp');
+          else 
+            $(this)
+              .removeClass('fadeInDown')
+              .addClass('fadeOutDown');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInUp')
+              .addClass('fadeOutUp');
+          else 
+            $(this)
+              .removeClass('fadeOutUp')
+              .addClass('fadeInDown');
+        }, {
+            offset: '-10%'
+        });
+  </script>
+
+  <script>
+      $('.bb')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+          else 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+          else 
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+        }, {
+            offset: '-10%'
+        });
+  </script>
+
+  <script>
+      $('.new-iphone')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+          else 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+          else 
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+        }, {
+            offset: '-10%'
+        });
+  </script>
+
+</body>
+</html>
