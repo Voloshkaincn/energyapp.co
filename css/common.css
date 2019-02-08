@@ -488,6 +488,7 @@ body{
 	.logo-header{
 		position: absolute;
 		bottom: 0;
+		left: 15px;
 		z-index: 9;
 	}
 	.header-description{
@@ -675,6 +676,7 @@ body{
 	.paragraph{
 		text-indent: 39px;
 		line-height: 30px;
+		margin-bottom: 25px;
 	}
 	.paragraph span{
 		text-transform: uppercase;
@@ -723,11 +725,14 @@ body{
 		    font-size: 16px;
 		}
 		.paragraph {
-		    text-indent: 15px;
+		    text-indent: 25px;
 		    line-height: 25px;
 		}
 		.paragraph span {
 		    font-size: 16px;
+		}
+		a.hvr-float-shadow {
+		    margin-left: 25px;
 		}
 	}
 
@@ -738,10 +743,9 @@ body{
 		.paragraph {
 		    line-height: 30px;
 		    text-indent: 25px;
+		    margin-bottom: 15px;
 		}
-		a.hvr-float-shadow {
-		    margin-left: 25px;
-		}
+		
 		.content {
 		    margin: 0;
 		}
@@ -806,9 +810,6 @@ body{
 	.firstPage .rightblock {
 		margin-left: auto;
 	}
-	.firstPage .paragraph{
-		margin-bottom: 25px;
-	}
 	.firstRowHead {
 		position: absolute;
 		top: 0;
@@ -859,18 +860,11 @@ body{
 	.secondPage{
 		background: #f4f4f4;
 	}
-	.secondPage a.hvr-float-shadow {
-	    margin-left: 39px;
-	}
 	.secondPage .leftblock {
 	    margin-right: auto;
 	}
 	.secondPage .buttons {
 	    margin-top: 34px;
-	}
-
-	.secondPage .paragraph {
-	    margin-bottom: 25px;
 	}
 
 	@media (max-width: 991px){
@@ -905,10 +899,6 @@ body{
 	.thirdPage {
 		padding-bottom: 70px;
 	}
-	.thirdPage .paragraph {
-	    margin-bottom: 25px;
-	}
-
 	.thirdPage .rightblock {
 	    margin-left: auto;
 	}
@@ -945,22 +935,23 @@ body{
 	padding: 0;
 }
 .yellow-truck-block{
-	height: 728px;
-	overflow: hidden;
 	background: #eee url(../img/yellow-truck-block/bg.jpg) no-repeat top center;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .yellow-truck-block-title{
 	font-family: "OpenSansBold";
-	font-size: 50px;
-	letter-spacing: 0.02em;
+	font-size: 48px;
+	letter-spacing: 0.05em;
 	line-height: 1em;
 	color: #fff;
 	text-transform: uppercase;
 	margin-top: 52px;
+	margin-bottom: 60px;
 }
 .yellow-truck-block-title .red-number{
 	color: #e8302d;
+	margin-right: 0.3em;
 }
 .yellow-truck-block-title .thin{
 	font-family: "OpenSansLight";
@@ -999,7 +990,7 @@ body{
 	height: 44px;
     float: right;
     width: 360px;
-    right: 22px;
+    right: 30px;
 }
 .yellow-truck-block-item-red{
 	color: #fff;
@@ -1028,56 +1019,71 @@ body{
 }
 .new-iphone{
 	position: relative;
-	top:-170px;
-	left: 65px;
+	right: -35px;
+	margin-bottom: -180px;
+	margin-top: 50px;
 }
 @media (max-width: 1199px){
 	.yellow-truck-block-item-red {
-	    margin-top: 85px;
+
 	}
 	.new-iphone {
-	    top: -100px;
-    	left: 70px;
+	    right: 0px;
+	    margin-top: 60px;
+	    max-width: 110%;    
 	}
 	.yellow-truck-block-title {
-	    margin-top: 75px;
+		font-size: 40px;
+		margin-bottom: 40px;
+		margin-top: 45px;
+	}
+	.yellow-truck-block-title .thin {
+		font-size: 40px;
 	}
 	.yellow-truck-block-item {
 	    margin-right: 0px;
 	}
 }
 @media (max-width: 991px){
+	.yellow-truck-block {
+		padding-bottom: 10px;
+	}
 	.yellow-truck-block-title {
-	    margin-top: 55px;
-    	font-size: 38px;
+	    margin-top: 32px;
+    	font-size: 31px;
+    	margin-bottom: 30px;
 	}
 	.yellow-truck-block-title .thin {
-	    font-size: 32px;
+	    font-size: 31px;
 	}
 	.new-iphone {
-	       top: -45px;
-    	left: 45px;
-	}
-	.yellow-truck-block-item-red {
-	    margin-top: 120px;
-	}
-	.yellow-truck-block-item {
-	    margin-right: 30px;
+	    right: 7px;
+	    margin-top: 55px;
+	    max-height: 450px;
+	    max-width: unset;
 	}
 }
 @media (max-width: 767px){
+	.yellow-truck-block {
+		margin-top: 20px;
+	}
 	.yellow-truck-block .cl-effect-2 {
 	    line-height: 50px;
 	}
 	.yellow-truck-block-title {
-	    margin-top: 80px;
+	    margin-top: 34px;
     	font-size: 22px;
+    	margin-bottom: 35px;
 	}
 	.yellow-truck-block-title .thin {
 	    font-size: 18px;
 	}
 	.yellow-truck-block-item:after {
 	    display: none;
+	}
+	.yellow-truck-block-logo-black {
+		float: right;
+		width: 100px;
 	}
 	.yellow-truck-block-item {
 	    font-size: 12px;
@@ -1093,11 +1099,12 @@ body{
 	    margin-top: 20px;
 	}
 	.new-iphone {
-	    top: 0px;
-	    width: 165px;
-	    margin: 0 auto;
-	    display: block;
-	    left: 15px;
+    	max-height: 350px;
+    	margin-right: auto;
+    	margin-left: auto;
+    	display: block;
+    	margin-bottom: -90px;
+    	margin-top: 10px;
 	}
 	img[alt="logo-black"]{
 		width: 106px;
@@ -1109,222 +1116,259 @@ body{
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Grey Block~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.grey-block{
-	background: #191919;
-	height: 560px;
-}
-
-.grey-block-title{
-	font-family: "OpenSansBold";
-	font-size: 26px;
-	letter-spacing: 0.02em;
-	color: #fff;
-	line-height: 1em;
-	margin-top:55px;
-	margin-bottom:  100px;
-}
-
-a.line-for-logotypes{
-	height: 250px;
-	width: 250px;
-	background-position: 0 0;
-	display: block;
-}
-
-a.line-for-logotypes:hover{
-	background-position: 0 100%;
-}
-
-a.apple{
-	background: url(../img/apple-logo.png) no-repeat top center;
-}
-
-a.android{
-	background: url(../img/android-logo.png) no-repeat top center;
-}
-
-a.bb{
-	background: url(../img/blackBerry-logo.png) no-repeat top center;
-}
-
-.grey-block .cl-effect-2 {
-    line-height: 100px;
-    margin-top: 29px;
-}
-@media (max-width: 991px){
-	a.line-for-logotypes {
-	    width: 220px;
-	    background-size: cover;
-	    height: 220px;
-	    margin: 0 auto;
+  /*	.grey-block{
+		background: #191919;
+		height: 560px;
 	}
-}
 
-@media (max-width: 767px){
 	.grey-block-title{
-		line-height: 1.2em;
-		margin-top:30px;
-		margin-bottom:  40px;
+		font-family: "OpenSansBold";
+		font-size: 26px;
+		letter-spacing: 0.02em;
+		color: #fff;
+		line-height: 1em;
+		margin-top:55px;
+		margin-bottom:  100px;
 	}
-	a.line-for-logotypes img {
-		width: 80%;
-	}
-	.grey-block {
-	    height:auto;
-	}
-	.grey-block .cl-effect-2 {
-	    line-height: 80px;
-	    margin-top: 0px;
-	}
-	a.line-for-logotypes {
-	    width: 105px;
-	    background-size: cover;
-	    height: 105px;
-	    margin: 0 auto;
-	}
-	.grey-block .col-xs-4{
-		padding: 0;
-	}
-}
 
-@media (max-width: 480px){
-	a.line-for-logotypes img {
-		width: 80%;
+	a.line-for-logotypes{
+		height: 250px;
+		width: 250px;
+		background-position: 0 0;
+		display: block;
 	}
-	a.line-for-logotypes {
-		line-height: 130px;
+
+	a.line-for-logotypes:hover{
+		background-position: 0 100%;
 	}
-}
+
+	a.apple{
+		background: url(../img/apple-logo.png) no-repeat top center;
+	}
+
+	a.android{
+		background: url(../img/android-logo.png) no-repeat top center;
+	}
+
+	a.bb{
+		background: url(../img/blackBerry-logo.png) no-repeat top center;
+	}
+
+	.grey-block .cl-effect-2 {
+	    line-height: 100px;
+	    margin-top: 29px;
+	}
+	@media (max-width: 991px){
+		a.line-for-logotypes {
+		    width: 220px;
+		    background-size: cover;
+		    height: 220px;
+		    margin: 0 auto;
+		}
+	}
+
+	@media (max-width: 767px){
+		.grey-block-title{
+			line-height: 1.2em;
+			margin-top:30px;
+			margin-bottom:  40px;
+		}
+		a.line-for-logotypes img {
+			width: 80%;
+		}
+		.grey-block {
+		    height:auto;
+		}
+		.grey-block .cl-effect-2 {
+		    line-height: 80px;
+		    margin-top: 0px;
+		}
+		a.line-for-logotypes {
+		    width: 105px;
+		    background-size: cover;
+		    height: 105px;
+		    margin: 0 auto;
+		}
+		.grey-block .col-xs-4{
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 480px){
+		a.line-for-logotypes img {
+			width: 80%;
+		}
+		a.line-for-logotypes {
+			line-height: 130px;
+		}
+	}*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Red Block~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.red-block{
-	background: #ee4240;
+	/*	.red-block{
+			background: #ee4240;
+		}
+
+		.red-block-title{
+			font-family: "OpenSansBold";
+			letter-spacing: 0.02em;
+			font-size: 64px;
+			color: #fff;
+			line-height: 1.2em;
+			margin-top: 80px;
+			margin-bottom: 40px;
+		}
+
+		.red-block-content{
+			font-family: "OpenSansLight";
+			font-size: 24px;
+			letter-spacing: 0.02em;
+			line-height: 1.2em;
+			color: #fff;
+			margin-bottom: 15px;
+		}
+
+		.red-block-content span{
+			font-family: "OpenSansBold";
+			text-transform: uppercase;
+		}
+
+
+		.red-block .red-block-mail a {
+			font-family: "OpenSansLight";
+			font-size: 20px;
+			letter-spacing: 0.02em;
+			line-height: 1.2em;
+			color: #010101;
+			border-bottom: 1px solid #010101;
+		}
+
+		.red-block-mail a:hover{
+			border-bottom: none;
+		}
+
+		.red-block-mail{
+			margin-bottom: 110px;
+		}
+
+		.red-block-separator{
+			height: 1px;
+			background: rgba(255,255,255,0.25);
+		}
+
+		.red-block .cl-effect-2 a span {
+		    background: #fff;
+		}
+
+		.red-block .share {
+		    color: #fff;
+		}
+
+	.red-block .cl-effect-2 {
+	    line-height: 70px;
+	    margin-top: 0px;
+	    float: right;
+	}
+
+	.red-block .box{
+		position: relative;
+		height: 70px;
+	}
+	.bottom-part .firstRowHead{
+		position: relative;
+		top: unset;
+		right: unset;
+	}
+	@media (max-width: 991px){
+		.red-block-title {
+		    margin-top: 60px;
+		    margin-bottom: 30px;
+		}
+		.red-block-mail {
+		    margin-bottom: 50px;
+		}
+	}
+
+	@media (max-width: 767px){
+		.red-block-title {
+		    margin-top: 40px;
+		    margin-bottom: 20px;
+		    font-size: 40px;
+		}
+		.red-block-mail {
+		    margin-bottom: 50px;
+		}
+		.red-block-content {
+		    font-size: 16px;
+		}
+		.red-block .red-block-mail a {
+		    font-size: 16px;
+		}
+		.copyrights {
+		    font-size: 12px;
+		    bottom: 10px;
+		}
+		.red-block .cl-effect-2 {
+		    float: none;
+		    width: 141px;
+		    margin: 0 auto;
+		}
+		.red-block .box {
+		    height: 85px;
+		}
+	}
+
+*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.footer {
+	background-color: #fff;
+	padding: 50px 0 100px;
 }
-
-.red-block-title{
-	font-family: "OpenSansBold";
-	letter-spacing: 0.02em;
-	font-size: 64px;
-	color: #fff;
-	line-height: 1.2em;
-	margin-top: 80px;
-	margin-bottom: 40px;
+.footer-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
-
-.red-block-content{
-	font-family: "OpenSansLight";
-	font-size: 24px;
-	letter-spacing: 0.02em;
-	line-height: 1.2em;
-	color: #fff;
-	margin-bottom: 15px;
-}
-
-.red-block-content span{
-	font-family: "OpenSansBold";
-	text-transform: uppercase;
-}
-
-
-.red-block .red-block-mail a {
-	font-family: "OpenSansLight";
-	font-size: 20px;
-	letter-spacing: 0.02em;
-	line-height: 1.2em;
-	color: #010101;
-	border-bottom: 1px solid #010101;
-}
-
-.red-block-mail a:hover{
-	border-bottom: none;
-}
-
-.red-block-mail{
-	margin-bottom: 110px;
-}
-
-.red-block-separator{
-	height: 1px;
-	background: rgba(255,255,255,0.25);
-}
-
-.red-block .cl-effect-2 a span {
-    background: #fff;
-}
-
-.red-block .share {
-    color: #fff;
-}
-
 .copyrights{
 	font-family: Helvetica;
 	font-size: 14px;
-	color: #fff;
+	color: #7a7a7a;
 	line-height: 1.2em;
-	text-align: center;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 15px;
-	margin: 0;
 }
-
-.red-block .cl-effect-2 {
-    line-height: 70px;
-    margin-top: 0px;
-    float: right;
-}
-
-.red-block .box{
-	position: relative;
-	height: 70px;
-}
-.bottom-part .firstRowHead{
-	position: relative;
-	top: unset;
-	right: unset;
+@media (max-width: 1199px){
+	.footer {
+		padding-bottom: 80px;
+	}
 }
 @media (max-width: 991px){
-	.red-block-title {
-	    margin-top: 60px;
-	    margin-bottom: 30px;
+	.footer {
+	    padding: 25px 0 45px;
 	}
-	.red-block-mail {
-	    margin-bottom: 50px;
+	.footer-row {
+		flex-wrap: wrap;
+    	flex-direction: column-reverse;
+	}
+	.footer .social {
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 767px) {
+	.footer {
+	    padding: 90px 0 45px;
+	}
+	.footer-row {
+		align-items: center;
+	}
+	.copyrights {
+		text-align: center;
 	}
 }
 
-@media (max-width: 767px){
-	.red-block-title {
-	    margin-top: 40px;
-	    margin-bottom: 20px;
-	    font-size: 40px;
-	}
-	.red-block-mail {
-	    margin-bottom: 50px;
-	}
-	.red-block-content {
-	    font-size: 16px;
-	}
-	.red-block .red-block-mail a {
-	    font-size: 16px;
-	}
-	.copyrights {
-	    font-size: 12px;
-	    bottom: 10px;
-	}
-	.red-block .cl-effect-2 {
-	    float: none;
-	    width: 141px;
-	    margin: 0 auto;
-	}
-	.red-block .box {
-	    height: 85px;
-	}
-}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hovers~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1332,25 +1376,48 @@ a.bb{
 
 .cl-effect-2 a span{
 	background: #1e1e1e;
-	font-size: 1.6em;
-	text-align: center;
+	font-size: 18px;
 	vertical-align: middle;
 	position: relative;
+	width: 28px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .cl-effect-2 a.in span{
-	padding: 0px 4.3px;
 	font-family: "RobotoBold";
 }
 
 .cl-effect-2 a.t span{
-	padding: 0px 7.77px;
 	font-family: "Pico";
 }
 
 .cl-effect-2 a.f span{
-	padding: 0px 8px;
 	font-family: "KlavikaBold";
+}
+.cl-effect-2 a span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0965a0;
+    content: attr(data-hover);
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .csstransforms3d .cl-effect-2 a.f:hover span::before, 
