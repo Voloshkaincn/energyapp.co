@@ -154,7 +154,23 @@
       </div><!-- container -->
     </div><!-- section firstPage -->
   </div><!-- fullpage -->
-    
+
+    <div class="section twitter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="twitter-wrap animated hidded">
+              <div class="twitter-content">
+                <a class="twitter-timeline" data-height="570" data-link-color="#1c1c1c" href="https://twitter.com/enexpress_app?ref_src=twsrc%5Etfw">Tweets by enexpress_app</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
     <div class="section secondPage">
       <div class="container">
         <div class="row img-plus-content">
@@ -193,6 +209,8 @@
         </div><!-- row img-plus-content -->
       </div><!-- container -->
     </div><!-- section secondPage -->
+
+
 
     <div class="section thirdPage">
       <div class="container">
@@ -540,6 +558,34 @@
   </script>
 
   <script>
+      $('.twitter-wrap')
+        .waypoint( function(dir) {
+          if ( dir === 'down' )
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+          else 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+        }, {
+            offset:'87%'
+        })
+        .waypoint( function(dir) {
+          if ( dir === 'down' ) 
+            $(this)
+              .removeClass('fadeInRight')
+              .addClass('fadeOutRight');
+          else 
+            $(this)
+              .removeClass('fadeOutRight')
+              .addClass('fadeInRight');
+        }, {
+            offset: '-50%'
+        });
+  </script>
+
+  <script>
       $('.thirdPage .leftblock')
         .waypoint( function(dir) {
           if ( dir === 'down' )
@@ -734,6 +780,7 @@
             offset: '-10%'
         });
   </script>
+
 
 </body>
 </html>
